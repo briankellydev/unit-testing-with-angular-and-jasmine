@@ -1,0 +1,42 @@
+{
+    "doggos": [
+        {
+            "name": "Steve",
+            "breed": "Shiba Inu",
+            "isAGoodBoy": true,
+            "favoriteTrick": "Bein' A Lil Dumbo",
+            "imgUrl": "assets/steve.jpg"
+        },
+        {
+            "name": "Chumbo",
+            "breed": "Golden Retreiver",
+            "isAGoodBoy": true,
+            "favoriteTrick": "Catch Some Sticks!!",
+            "imgUrl": "assets/chumbo.jpg"
+        },
+        {
+            "name": "Punmpkin",
+            "breed": "Cat?",
+            "isAGoodBoy": false,
+            "favoriteTrick": "Heckin' Mean",
+            "imgUrl": "assets/punmpkin.jpg"
+        },
+        {
+            "name": "Rumpus",
+            "breed": "Chihuahua",
+            "isAGoodBoy": true,
+            "favoriteTrick": "Endless Trembles",
+            "imgUrl": "assets/rumpus.jpg"
+        },
+        {
+            "name": "Bart",
+            "breed": "Japanese Chin",
+            "isAGoodBoy": true,
+            "favoriteTrick": "Trash Hoarding",
+            "imgUrl": "assets/bart.jpg"
+        }
+    ],
+    "totalDoggos": 9000,
+    "remainingTreats": 400,
+    "patsCurrentlyRequired": 80
+}

@@ -1,0 +1,23 @@
+img {
+    height: 250px;
+    width: 250px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+p {
+    margin: 0;
+}
+
+.fa-chevron-left, .fa-chevron-right {
+    margin-top: 150px;
+    cursor: pointer;
+}
+
+.fa-check-circle {
+    color: green;
+}
+
+.fa-times-circle {
+    color: red;
+}

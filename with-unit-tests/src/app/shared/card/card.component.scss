@@ -1,0 +1,16 @@
+.card {
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px gray;
+    margin-bottom: 10px;
+    background-color: white;
+    .card-title {
+        background-color: purple;
+        color: pink;
+        padding: 10px;
+    }
+    .card-body {
+        padding: 10px;
+    }
+}

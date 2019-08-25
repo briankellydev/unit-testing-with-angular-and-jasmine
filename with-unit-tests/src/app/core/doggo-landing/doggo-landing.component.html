@@ -1,0 +1,38 @@
+<app-card>
+    <div class="text-center">Welcome to the Doggo App!! Check here for all the good boys!!</div>
+</app-card>
+<div class="row" *ngIf="!loading">
+    <div class="col-6">
+        <app-card title="Good Boys">
+            <div class="row text-center">
+                <div class="col-2">
+                    <i class="fa fa-chevron-left" (click)="previousDoggo()"></i>
+                </div>
+                <div class="col-8">
+                    <h3>{{doggos[currentIndex].name}}</h3>
+                    <img [src]="doggos[currentIndex].imgUrl">
+                    <p *ngIf="doggos[currentIndex].isAGoodBoy"><i class="fa fa-check-circle"></i> Is A Good Boy</p>
+                    <p *ngIf="!doggos[currentIndex].isAGoodBoy"><i class="fa fa-times-circle"></i> Is Not A Good Boy</p>
+                    <p><span class="text-bold">Breed: </span>{{doggos[currentIndex].breed}}</p>
+                    <p><span class="text-bold">Favorite Trick: </span>{{doggos[currentIndex].favoriteTrick}}</p>
+                </div>
+                <div class="col-2">
+                    <i class="fa fa-chevron-right" (click)="nextDoggo()"></i>
+                </div>
+            </div>
+        </app-card>
+    </div>
+    <div class="col-6">
+        <app-card title="Data Metriks">
+            <p><span class="text-bold">Total Doggos:</span> {{totalDoggos}}</p>
+            <p><span class="text-bold">Remaining Treats:</span> {{remainingTreats}}</p>
+            <p><span class="text-bold">Pats Currently Required:</span> {{patsCurrentlyRequired}}</p>
+        </app-card>
+        <app-card title="A surnprise?? For me??">
+            <a [routerLink]="['/surprise']">Click here for a surnprise u dumbo!</a>
+        </app-card>
+        <app-card title="Just Da Good Boys!">
+            <p>The only good boys here is {{doggos | goodBoy}}</p>
+        </app-card>
+    </div>
+</div>
